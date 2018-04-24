@@ -6,4 +6,4 @@ WORKER=Test1 # Change to your worker name
 docker run -d --device /dev/dri:/dev/dri --rm -e WALLET=$WALLET -e WORKER=$WORKER emanaev/claymore
 
 # to check pool stats
-#  curl https://api.nanopool.org/v1/eth/avghashrateworkers/$WALLET/$WORKER
+# curl https://api.nanopool.org/v1/eth/avghashrate/$WALLET/$WORKER
