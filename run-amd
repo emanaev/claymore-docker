@@ -1,0 +1,9 @@
+#!/bin/bash
+WALLET=0xa6d8e8333962cea79736b7b2811faeda6a82e3de # Change to your wallet
+WORKER=Test1 # Change to your worker name
+
+# run with AMD GPU
+docker run -d --device /dev/dri:/dev/dri --rm -e WALLET=$WALLET -e WORKER=$WORKER emanaev/claymore
+
+# to check pool stats
+#  curl https://api.nanopool.org/v1/eth/avghashrateworkers/$WALLET/$WORKER
