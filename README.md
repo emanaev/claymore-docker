@@ -1,2 +1,2 @@
 # docker-claymore
-Claymore in docker, based on universal AMD/Nvidia image
+Claymore ETH dual miner in docker, based on universal AMD/Nvidia image

@@ -18,4 +18,4 @@ RUN ./gget.sh $GDRIVE_ID claymore.tar.gz && \
 ENV WALLET -
 ENV WORKER x
 
-CMD echo ./ethdcrminer64 -mode 1 -epool eth-eu1.nanopool.org:9999 -ewal "$WALLET.$WORKER" -epsw x
+CMD ./ethdcrminer64 -mode 1 -epool eth-eu1.nanopool.org:9999 -ewal "$WALLET.$WORKER" -epsw x
